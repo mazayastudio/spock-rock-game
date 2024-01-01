@@ -139,3 +139,5 @@ function updateParticles() {
 		}
 	}
 }
+
+export { startConfetti, stopConfetti, toggleConfetti, removeConfetti };
