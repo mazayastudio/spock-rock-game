@@ -15,6 +15,7 @@ body {
 }
 
 .game-container {
+	position: fixed;
 	width: 539px;
 	height: 600px;
 	background-color: white;

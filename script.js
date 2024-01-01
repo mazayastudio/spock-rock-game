@@ -35,6 +35,8 @@ function resetSelected() {
 	allGameIcons.forEach((icon) => {
 		icon.classList.remove("selected");
 	});
+	stopConfetti();
+	removeConfetti();
 }
 
 // Reset score & playerChoice/computerChoice
@@ -100,6 +102,7 @@ function updateScore(playerChoice) {
 		const choice = choices[playerChoice];
 		if (choice.defeats.indexOf(computerChoice) > -1) {
 			resultText.textContent = "You Won!";
+			startConfetti();
 			playerScoreNumber++;
 			playerScoreEl.textContent = playerScoreNumber;
 		} else {
